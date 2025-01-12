@@ -185,7 +185,7 @@ const scrollManager = function () {
   let prevYear = Number(yearOfReading) - 1;
 
   let prevRefElement = document.createElement("a");
-  prevRefElement.href = "/myreads.html?year=" + prevYear;
+  prevRefElement.href = "/reads/myreads.html?year=" + prevYear;
 
   bodyElement.append(prevRefElement);
   let prevLinkElement = document.createElement("span");
@@ -195,7 +195,7 @@ const scrollManager = function () {
   prevRefElement.append(prevLinkElement);
 
   let nextRefElement = document.createElement("a");
-  nextRefElement.href = "/myreads.html?year=" + nextYear;
+  nextRefElement.href = "/reads/myreads.html?year=" + nextYear;
   bodyElement.append(nextRefElement);
   let nextLinkElement = document.createElement("span");
   nextLinkElement.textContent = nextYear + " -->";
